@@ -15,7 +15,7 @@ typedef struct list{
 #define number_of_lists 10		// see lines 17 & 18 to understand
 
 #define csn create_single_node		// shortening the name of a function
-(lnk*)(csn)();
+(lnk*)(csn)();				// prototype of create_single_node func.
 
 int ii;
 lnk *head_chain[number_of_lists];
@@ -34,7 +34,7 @@ int main(){
 	printf("Enter the number you want to place in the node:\t");		// I plan to edit this "number" part later on
 	scanf("%ld",&data);
 	lnk *vertex = (lnk*)malloc(linkz);
-	lnk->toy_num = data;
-	lnk->next = NULL;
-	return toy_num;		// yes I am returning the node pointer to this newly created linked list node
+	vertex->toy_num = data;
+	vertex->next = NULL;
+	return vertex;		// yes I am returning the node pointer to this newly created linked list node
 }
